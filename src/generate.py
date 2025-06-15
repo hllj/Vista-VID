@@ -60,6 +60,13 @@ class VideoDescriptionPipeline:
         
         self.client = genai.Client(api_key=api_key)
         self.model_name = model_name
+        logger.info(f"Using Gemini model: {self.model_name}")
+
+        # Check model availability in Gemini
+        available_models = [model.name for model in self.client.models.list()]
+        if self.model_name not in available_models:
+            raise ValueError(f"Model {self.model_name} is not available in Gemini. Please check the model name.")
+        
         self.level1_interval = level1_interval
         self.level2_interval = level2_interval
         

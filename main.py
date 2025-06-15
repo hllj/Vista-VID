@@ -1,3 +1,8 @@
+import os
+from dotenv import load_dotenv
+# Load environment variables from .env file
+load_dotenv()
+
 from datetime import datetime
 from src.generate import VideoDescriptionPipeline
 import logging
@@ -8,9 +13,10 @@ logger = logging.getLogger(__name__)
 
 def main():
     pipeline = VideoDescriptionPipeline(
-        level1_interval=10,  # Every 10 seconds for longer videos
-        level2_interval=30,  # Every 30 seconds
-        model_name="models/gemini-2.5-flash-preview-05-20"
+        level1_interval=10,
+        level2_interval=30,
+        model_name=os.environ["MODEL_NAME"],
+        google_api_key=os.environ["GOOGLE_API_KEY"],
     )
     
     # Process YouTube video directly
