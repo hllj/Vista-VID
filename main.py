@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 from datetime import datetime
-from src.generate import VideoDescriptionPipeline
+from src.pipelines.video_description_pipeline import VideoDescriptionPipeline
 import logging
 
 # Configure logging
