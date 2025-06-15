@@ -13,24 +13,14 @@ dotenv.load_dotenv()
 from google import genai
 from google.genai import types
 
+from src.entities import VideoSegment, Description
+from src.prompts.factory import PromptFactory
+
 # Configure logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-@dataclass
-class VideoSegment:
-    """Represents a video segment with time boundaries"""
-    start_time: float
-    end_time: float
-    segment_index: int
-
-@dataclass
-class Description:
-    """Represents a description at any level"""
-    level: int
-    timestamp: float
-    content: str
-    segment_index: int
+# VideoSegment and Description classes are now imported from factory.py
 
 class VideoDescriptionPipeline:
     """
@@ -232,8 +222,8 @@ class VideoDescriptionPipeline:
             types.Part(
                 file_data=types.FileData(file_uri=video_uri),
                 video_metadata=types.VideoMetadata(
-                    start_offset=f'{segment.start_time}s',
-                    end_offset=f'{segment.end_time}s'
+                    start_offset=f'{int(segment.start_time)}s',
+                    end_offset=f'{int(segment.end_time)}s'
                 )
             ),
             types.Part(text=prompt)
@@ -242,7 +232,11 @@ class VideoDescriptionPipeline:
         # Call Gemini
         response = self.client.models.generate_content(
             model=self.model_name,
-            contents=types.Content(parts=content_parts)
+            contents=types.Content(parts=content_parts),
+            config=types.GenerateContentConfig(
+                max_output_tokens=1024,
+                temperature=0.1
+            )
         )
         
         description = Description(
@@ -277,12 +271,25 @@ class VideoDescriptionPipeline:
         # Create prompt
         prompt = self._create_level2_prompt(recent_level1, latest_level2, current_time)
         
+        content_parts = [
+            types.Part(
+                file_data=types.FileData(file_uri=video_uri),
+                video_metadata=types.VideoMetadata(
+                    start_offset=f'{int(current_time - self.level2_interval)}s',
+                    end_offset=f'{int(current_time)}s'
+                )
+            ),
+            types.Part(text=prompt)
+        ]
+        
         # For level-2, we can either use the recent segment or provide context without video
         # Using text-only generation with context from level-1 descriptions
         response = self.client.models.generate_content(
             model=self.model_name,
-            contents=types.Content(
-                parts=[types.Part(text=prompt)]
+            contents=types.Content(parts=content_parts),
+            config=types.GenerateContentConfig(
+                max_output_tokens=2048,
+                temperature=0.1
             )
         )
         
@@ -329,7 +336,11 @@ class VideoDescriptionPipeline:
         
         response = self.client.models.generate_content(
             model=self.model_name,
-            contents=types.Content(parts=content_parts)
+            contents=types.Content(parts=content_parts),
+            config=types.GenerateContentConfig(
+                max_output_tokens=2048,
+                temperature=0.1
+            )
         )
         
         self.level3_description = Description(
@@ -364,70 +375,19 @@ class VideoDescriptionPipeline:
     
     def _create_level1_prompt(self, segment: VideoSegment, context: Dict) -> str:
         """Create prompt for level-1 description"""
-        prompt = f"""You are analyzing a video segment from {segment.start_time:.1f}s to {segment.end_time:.1f}s.
-
-Please provide a detailed description of the events happening in this specific segment. Focus on:
-- Actions and movements of people/objects
-- Visual changes and transitions
-- Important details that advance the plot or narrative
-- Dialogue or audio cues if relevant
-
-"""
-        
-        if context["previous_level1"]:
-            prompt += f"Previous segment description: {context['previous_level1']}\n\n"
-        
-        if context["latest_level2"]:
-            prompt += f"Overall plot summary so far: {context['latest_level2']}\n\n"
-        
-        prompt += "Describe what happens in the current segment in 2-3 sentences:"
-        
-        return prompt
+        return PromptFactory.create_level1_prompt(segment, context)
     
     def _create_level2_prompt(self, recent_level1: List[Description], 
                             latest_level2: Optional[Description], 
                             current_time: float) -> str:
         """Create prompt for level-2 description"""
-        prompt = f"You are creating a plot summary for a video up to {current_time:.1f} seconds.\n\n"
-        
-        if latest_level2:
-            prompt += f"Previous plot summary: {latest_level2.content}\n\n"
-        
-        prompt += "Recent events:\n"
-        for desc in recent_level1:
-            prompt += f"- At {desc.timestamp:.1f}s: {desc.content}\n"
-        
-        prompt += "\nProvide an updated plot summary that incorporates these recent events. Keep it concise but comprehensive (3-5 sentences):"
-        
-        return prompt
+        return PromptFactory.create_level2_prompt(recent_level1, latest_level2, current_time)
     
     def _create_level3_prompt(self, unsummarized_level1: List[Description], 
                             latest_level2: Optional[Description], 
                             total_duration: float) -> str:
         """Create prompt for level-3 description"""
-        prompt = f"""You are creating a complete overview of this {total_duration:.1f}-second video.
-
-Please analyze the entire video and provide a comprehensive description that captures:
-- The complete narrative arc
-- Key themes and messages
-- Main characters and their roles
-- Important visual or audio elements
-- Overall tone and style
-
-"""
-        
-        if latest_level2:
-            prompt += f"Main plot summary from earlier analysis: {latest_level2.content}\n\n"
-        
-        if unsummarized_level1:
-            prompt += "Final events not yet summarized:\n"
-            for desc in unsummarized_level1:
-                prompt += f"- At {desc.timestamp:.1f}s: {desc.content}\n"
-            prompt += "\n"
-        
-        prompt += "Provide a comprehensive description of the entire video that would serve as a standalone summary (4-6 sentences):"
-        
-        return prompt
+        return PromptFactory.create_level3_prompt(unsummarized_level1, latest_level2, total_duration)
     
     def process_video(self, video_path: str) -> Dict[str, any]:
         """

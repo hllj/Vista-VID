@@ -1,115 +1,55 @@
 {
-    "video_path": "https://www.youtube.com/watch?v=M8VqHdq37HY",
-    "video_uri": "https://www.youtube.com/watch?v=M8VqHdq37HY",
-    "duration": 146.0,
-    "processing_timestamp": "2025-06-15T15:22:01.470615",
+    "video_path": "https://www.youtube.com/shorts/dIsxL4iI_1A",
+    "video_uri": "https://www.youtube.com/shorts/dIsxL4iI_1A",
+    "duration": 60.0,
+    "processing_timestamp": "2025-06-15T21:33:45.333753",
     "level1_descriptions": [
         {
             "timestamp": 0,
-            "content": "The video initially shows an OBS Studio interface with a recursive desktop view, alongside a partially visible Chrome browser. At 0:01, the OBS window disappears, and the screen is split: the left side displays a large red 3D number \"4\" in an image viewer, while the right side shows a Chrome browser window titled \"TensorFlow on ESP32\". This browser window continuously updates a \"Prediction\" value (cycling through numbers like 1, 3, 4, 0, 8) and a small grayscale image, which appears to be a processed input of the number \"4\" from the left.",
+            "content": "Sure, here is a description of the video segment:\n\nThe video begins with a map of the world, with red circles highlighting different locations. The text \"Did you know\" appears, followed by \"Longest overwater bridge in the world is?\" The map zooms in on China, and then transitions to an aerial view of a long, straight bridge over water. The text \"that halfway across\" appears, followed by \"any land or shore\" and \"that you're driving along an endless.\" The video then shows a view from inside a car driving on the bridge, with fog obscuring the horizon.",
             "segment_index": 0
         },
         {
             "timestamp": 10,
-            "content": "From 0:10 to 0:20, the left side of the screen consistently displays the large red 3D number \"4\" in the image viewer. On the right, the Chrome browser continues to show the \"TensorFlow on ESP32\" application, with the \"Prediction\" value holding steady at \"4\" for the entire duration of this segment. The small grayscale image next to the prediction also consistently displays a processed version of the number \"4\", indicating a correct and stable recognition.",
+            "content": "Sure, here is a description of the video segment from 10.0s to 20.0s:\n\nThe video continues with the view from inside the car driving on the bridge, with the text \"strip of water\" appearing. The video then cuts to an animated overhead view of a car driving on a road, with the text \"Some drivers even panic and call emergency services.\" The animation zooms out to show the road as a bridge over water, with a speech bubble saying \"Swear, I'm in the middle of the ocean.\" The video then transitions to an aerial view of the bridge, obscured by fog, with the text \"especially in fog or heavy rain.\" Finally, the video shows a clear aerial view of the bridge's location in the U.S., marked by a red circle.",
             "segment_index": 1
         },
         {
             "timestamp": 20,
-            "content": "From 0:20 to 0:30, the image on the left-hand side of the screen is updated sequentially to display a new 3D red digit every two seconds, progressing from \"4\" to \"8\". Simultaneously, the \"TensorFlow on ESP32\" application on the right-hand side of the screen accurately updates its \"Prediction\" value to match the newly displayed digit, indicating successful real-time recognition.",
+            "content": "Sure, here is a description of the video segment from 20.0s to 30.0s:\n\nThe video begins with an animated map of the United States, highlighting the state of Louisiana with a red pin. The text \"Lake Pontchartrain Causeway\" appears, indicating the location of the bridge. The video then transitions to an aerial view of the bridge, showing its straight path across the water, with the text \"38.5 kilometers (24 mi)\" indicating its length. The video then zooms out to show the entire Lake Pontchartrain area, with the text \"Lake Pontchartrain\" labeling the body of water.",
             "segment_index": 2
         },
         {
             "timestamp": 30,
-            "content": "The sequential display of red 3D digits on the left continues, progressing from \"8\" to \"3\" at two-second intervals (showing 8, 9, 0, 1, 2, then 3). In parallel, the \"TensorFlow on ESP32\" application on the right consistently and accurately updates its \"Prediction\" value to match the newly displayed digit, demonstrating precise real-time recognition. This uninterrupted pattern of image updates and corresponding accurate predictions continues throughout the segment.",
+            "content": "Sure, here is a description of the video segment from 30.0s to 40.0s:\n\nThe video compares the size of Lake Pontchartrain to the city of London, showing that the lake is larger. It then highlights that the bridge is supported by over 9,500 concrete pilings. The video states that construction of the bridge began in 1955, and within a year, the first span opened. Finally, the video shows an animation of the bridge being built over the lake.",
             "segment_index": 3
         },
         {
             "timestamp": 40,
-            "content": "The continuous display of red 3D digits on the left side, progressing from \"3\" to \"8\" at two-second intervals, is consistently met with accurate, real-time predictions by the \"TensorFlow on ESP32\" application on the right. This maintains the established pattern of seamless visual updates and precise recognition.",
+            "content": "Sure, here is a description of the video segment from 40.0s to 50.0s:\n\nThe video shows the second span of the bridge being added to separate traffic directions. It then transitions to the year 2005, when Hurricane Katrina brought catastrophic destruction to Louisiana. Despite the devastation, the video highlights that the bridge survived the hurricane.",
             "segment_index": 4
         },
         {
             "timestamp": 50,
-            "content": "The video continues to display red 3D digits on the left side, sequentially progressing from \"8\" to \"2\" at two-second intervals. The \"TensorFlow on ESP32\" application on the right consistently and accurately predicts each displayed digit in real-time, maintaining the established pattern of seamless visual updates and precise recognition. The background audio of indistinct chatter persists.",
+            "content": "Sure, here is a description of the video segment from 50.0s to 60.0s:\n\nThe video states that the bridge is in the Guinness World Records. It then shows a simulation of cars driving on the bridge, with the text indicating that up to 40,000 cars cross it daily. A police car is shown driving in the middle of the bridge to help drivers who feel disoriented or get motion sickness. The video then shows a sad face emoji and a sick face emoji on the bridge, representing the drivers who feel disoriented or get motion sickness.",
             "segment_index": 5
-        },
-        {
-            "timestamp": 60,
-            "content": "The video maintains its established pattern, with the left side continuing to display various red 3D digits, including \"2\", \"6\", \"7\", \"0\", and \"1\", each for approximately two seconds. Concurrently, the \"TensorFlow on ESP32\" application on the right reliably updates its \"Prediction\" to accurately reflect each new digit shown, demonstrating consistent real-time recognition. The indistinct background chatter persists throughout this segment.",
-            "segment_index": 6
-        },
-        {
-            "timestamp": 70,
-            "content": "The video opens displaying a nested OBS Studio interface, which quickly transitions at 0:01 to a split-screen view. On the left, a prominent red 3D digit \"4\" is shown, while the right displays a \"TensorFlow on ESP32\" application. Throughout this segment, the application's \"Prediction\" value rapidly fluctuates, displaying various digits (e.g., \"1\", \"3\", \"4\", \"0\", \"8\") before mostly stabilizing on \"4\" around 0:09, all while indistinct background chatter persists.",
-            "segment_index": 7
-        },
-        {
-            "timestamp": 80,
-            "content": "The consistent pattern from the previous segments continues as the left display updates its red 3D digit every two seconds, cycling through numbers like \"7,\" \"8,\" \"9,\" \"0,\" and \"1.\" Each time, the TensorFlow application on the right promptly and accurately adjusts its \"Prediction\" to match the newly displayed digit. Throughout this segment, the indistinct background chatter remains audible.",
-            "segment_index": 8
-        },
-        {
-            "timestamp": 90,
-            "content": "The video briefly displays a nested OBS Studio interface before transitioning to the split screen view. On the left, a large red 3D digit \"4\" is shown, while the TensorFlow application on the right initially struggles, displaying fluctuating predictions such as \"1,\" \"3,\" \"0,\" and \"8.\" However, by 0:08, the application's \"Prediction\" stabilizes and accurately displays \"4,\" recognizing the digit on the left.",
-            "segment_index": 9
-        },
-        {
-            "timestamp": 100,
-            "content": "In this segment, the TensorFlow application on the right continues to accurately predict the digit \"4\" shown on the left, maintaining the stable recognition established in the previous moments. The image of the red 3D number \"4\" remains displayed on the left side of the screen. Indistinct background chatter continues throughout.",
-            "segment_index": 10
-        },
-        {
-            "timestamp": 110,
-            "content": "In this segment, the red 3D number \"4\" remains consistently displayed on the left side of the screen. The \"TensorFlow on ESP32\" application on the right continues to accurately predict the digit \"4\", maintaining the stable recognition observed in the preceding moments. Indistinct background chatter persists throughout the segment.",
-            "segment_index": 11
-        },
-        {
-            "timestamp": 120,
-            "content": "The red 3D number \"4\" remains stationary on the left side of the screen. Concurrently, the \"TensorFlow on ESP32\" application on the right continues to accurately predict the digit \"4\", displaying it consistently in the prediction field and the accompanying small image preview. Indistinct background chatter persists throughout this segment, maintaining the atmosphere observed in previous moments.",
-            "segment_index": 12
-        },
-        {
-            "timestamp": 130,
-            "content": "Throughout this segment, the red 3D number \"4\" remains fixed on the left side of the screen. The \"TensorFlow on ESP32\" application on the right consistently displays \"4\" as its prediction, accurately reflecting the image presented. Indistinct background chatter continues to be audible, maintaining the consistent audio environment.",
-            "segment_index": 13
-        },
-        {
-            "timestamp": 140,
-            "content": "In this segment, the red 3D number \"4\" remains static on the left side of the screen. However, the \"TensorFlow on ESP32\" application on the right no longer consistently recognizes it, with the prediction rapidly fluctuating between various numbers like 1, 3, 4, 0, and 8, and the small input image appearing distorted. Indistinct background chatter continues throughout the segment.",
-            "segment_index": 14
         }
     ],
     "level2_descriptions": [
         {
             "timestamp": 30,
-            "content": "The video opens displaying an OBS Studio interface before transitioning to a split screen: the left side shows a large red 3D number \"4\" in an image viewer, while the right features a Chrome browser running a \"TensorFlow on ESP32\" application that initially cycles through predictions of the input. From 0:10, the left side consistently displays the red \"4\" as the TensorFlow application stabilizes its \"Prediction\" value to \"4\", accurately recognizing the digit. After 0:20, the left-hand image updates every two seconds to a new red 3D digit (progressing from \"4\" to \"8\"), with the TensorFlow application on the right accurately updating its prediction in real-time to match each newly displayed number.",
+            "content": "The video opens with a world map, posing the question of where the longest overwater bridge is located. It then reveals the answer with an aerial view of a long, straight bridge over water. The video highlights the bridge's unique characteristic: halfway across, no land is visible, creating the illusion of driving on an endless strip of water. This can cause panic for some drivers, leading them to call emergency services, especially in foggy or rainy conditions. The video then reveals the bridge's location in Louisiana, USA, identifying it as the Lake Pontchartrain Causeway. The video concludes by showing the bridge's 38.5-kilometer length and its path across Lake Pontchartrain.",
             "segment_index": 0
         },
         {
             "timestamp": 60,
-            "content": "The video opens displaying an OBS Studio interface before transitioning to a split screen: the left shows a large red 3D number \"4\" while the right features a \"TensorFlow on ESP32\" application. From 0:10, the application stabilizes its \"Prediction\" value to \"4\", accurately recognizing the digit. After 0:20, the left-hand image begins updating every two seconds to a new red 3D digit, and this pattern continues seamlessly up to 60.0 seconds. Throughout this period, the TensorFlow application on the right consistently and accurately updates its real-time prediction to match each newly displayed digit, demonstrating precise recognition of various numbers amidst indistinct background chatter.",
+            "content": "The video opens with a world map, posing the question of where the longest overwater bridge is located. It then reveals the answer with an aerial view of a long, straight bridge over water. The video highlights the bridge's unique characteristic: halfway across, no land is visible, creating the illusion of driving on an endless strip of water. This can cause panic for some drivers, leading them to call emergency services, especially in foggy or rainy conditions. The video then reveals the bridge's location in Louisiana, USA, identifying it as the Lake Pontchartrain Causeway. The video concludes by showing the bridge's 38.5-kilometer length and its path across Lake Pontchartrain. The video then compares the size of Lake Pontchartrain to the city of London, highlighting that the bridge is supported by over 9,500 concrete pilings and that construction began in 1955. The video shows the second span of the bridge being added to separate traffic directions and highlights that the bridge survived Hurricane Katrina in 2005. The video states that the bridge is in the Guinness World Records and that up to 40,000 cars cross it daily, with a police car on duty to help drivers who feel disoriented or get motion sickness.",
             "segment_index": 1
-        },
-        {
-            "timestamp": 90,
-            "content": "The video opens displaying an OBS Studio interface before transitioning to a split screen where a red 3D \"4\" is recognized by a \"TensorFlow on ESP32\" application, stabilizing its prediction by 0:10. From 0:20 onwards, the left display continuously cycles through new red 3D digits every two seconds, and the application on the right consistently updates its real-time prediction to match, demonstrating precise recognition of various numbers like \"2\", \"6\", \"7\", \"0\", and \"1\" up to 70.0 seconds. However, at 70.0 seconds, the video briefly reverts to an opening sequence, showing a nested OBS interface before a red 3D \"4\" reappears, and the application's prediction fluctuates before re-stabilizing on \"4\". The established pattern then resumes from 80.0 seconds, with the left display updating to new red 3D digits such as \"7,\" \"8,\" \"9,\" \"0,\" and \"1\", which the TensorFlow application promptly and accurately recognizes, maintaining this consistent performance until 90.0 seconds, all while indistinct background chatter persists throughout.",
-            "segment_index": 2
-        },
-        {
-            "timestamp": 120,
-            "content": "The video opens displaying an OBS Studio interface before transitioning to a split screen where a red 3D \"4\" is recognized by a \"TensorFlow on ESP32\" application, stabilizing its prediction by 0:10. From 0:20 onwards, the left display continuously cycles through new red 3D digits every two seconds, and the application consistently updates its real-time prediction to match, demonstrating precise recognition of various numbers like \"2\", \"6\", \"7\", \"0\", and \"1\" up to 70.0 seconds. The video briefly reverts to an opening sequence at 70.0s before resuming the pattern of accurate digit recognition until 90.0 seconds. At 90.0 seconds, after another brief OBS interface display, a red 3D '4' reappears, and while the application initially struggles with fluctuating predictions, it quickly stabilizes to accurately recognize '4'. This stable recognition of the red 3D '4' then continues accurately throughout the remainder of the video up to 120.0 seconds, all while indistinct background chatter persists.",
-            "segment_index": 3
-        },
-        {
-            "timestamp": 146.0,
-            "content": "The video opens with a \"TensorFlow on ESP32\" application accurately recognizing a red 3D '4', then demonstrating precise real-time recognition of various cycling digits until 90.0 seconds. After a brief interlude, a red 3D '4' reappears, and despite initial fluctuations, the application stabilizes its prediction, accurately recognizing the '4' through 130.0 seconds. However, from 140.0 seconds, while the red 3D '4' remains static, the application's prediction rapidly fluctuates between multiple numbers, and its input image appears distorted. Indistinct background chatter persists throughout these segments.",
-            "segment_index": 4
         }
     ],
     "level3_description": {
-        "timestamp": 146.0,
-        "content": "This video showcases a \"TensorFlow on ESP32\" application designed for real-time digit recognition. Initially, the system demonstrates high accuracy, successfully identifying a static red 3D number '4' and then precisely recognizing various cycling digits in real-time up to the 90-second mark. After a brief interlude, the red 3D '4' reappears, and despite some initial fluctuations, the application soon stabilizes its prediction, consistently recognizing the '4' for an extended period. However, in the final moments of the video, the system's performance deteriorates significantly. The input image becomes distorted, and the application's prediction rapidly fluctuates between multiple incorrect numbers, even though the red 3D '4' remains static on the screen. Indistinct background chatter is audible throughout the demonstration."
+        "timestamp": 60.0,
+        "content": "Sure, here is a comprehensive description of the video:\n\nThe video begins with a world map, posing the question of where the longest overwater bridge is located. It then reveals the answer with an aerial view of a long, straight bridge over water. The video highlights the bridge's unique characteristic: halfway across, no land is visible, creating the illusion of driving on an endless strip of water. This can cause panic for some drivers, leading them to call emergency services, especially in foggy or rainy conditions. The video then reveals the bridge's location in Louisiana, USA, identifying it as the Lake Pontchartrain Causeway. The video concludes by showing the bridge's 38.5-kilometer length and its path across Lake Pontchartrain. The video then compares the size of Lake Pontchartrain to the city of London, highlighting that the bridge is supported by over 9,500 concrete pilings and that construction began in 1955. The video shows the second span of the bridge being added to separate traffic directions and highlights that the bridge survived Hurricane Katrina in 2005. The video states that the bridge is in the Guinness World Records and that up to 40,000 cars cross it daily, with a police car on duty to help drivers who feel disoriented or get motion sickness. The video is informative and engaging, using a combination of aerial footage, maps, and graphics to illustrate the bridge's unique features and history."
     },
-    "timestamp": "2025-06-15T15:22:01.473663"
+    "timestamp": "2025-06-15T21:33:45.335310"
 }
