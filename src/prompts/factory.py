@@ -21,13 +21,21 @@ class PromptFactory:
         Returns:
             Formatted prompt string
         """
-        prompt = f"""You are analyzing a video segment from {segment.start_time:.1f}s to {segment.end_time:.1f}s.
+        prompt = f"""Analyze the video segment from {segment.start_time:.1f}s to {segment.end_time:.1f}s and provide a comprehensive description covering:
+Primary Elements:
 
-Please provide a detailed description of the events happening in this specific segment. Focus on:
-- Actions and movements of people/objects
-- Visual changes and transitions
-- Important details that advance the plot or narrative
-- Dialogue or audio cues if relevant
+Actions: Describe all human/object movements, gestures, and interactions
+Scene composition: Spatial relationships, camera angles, and framing changes
+Temporal progression: Sequence of events and their causal relationships
+
+Secondary Elements:
+
+Visual details: Colors, lighting, textures, and environmental context
+Audio-visual sync: Dialogue, sound effects, music, and their relation to visuals
+Narrative significance: Plot advancement, character development, or thematic elements
+
+Output Format:
+Structure your response as a flowing narrative that captures both the literal events and their contextual meaning within the broader video content. Prioritize clarity and specificity over brevity.
 
 """
         
@@ -104,6 +112,6 @@ Please analyze the entire video and provide a comprehensive description that cap
                 prompt += f"- At {desc.timestamp:.1f}s: {desc.content}\n"
             prompt += "\n"
         
-        prompt += "Provide a comprehensive description of the entire video that would serve as a standalone summary (7-10 sentences):"
+        prompt += "\nProvide a comprehensive description of the entire video that would serve as a standalone summary (7-10 sentences):"
         
         return prompt

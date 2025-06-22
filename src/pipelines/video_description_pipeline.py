@@ -1,14 +1,10 @@
 import os
-import dotenv
 from typing import List, Dict, Optional, Tuple
 from dataclasses import dataclass
 from datetime import datetime
 import json
 from pathlib import Path
 import logging
-
-# Load environment variables from .env file
-dotenv.load_dotenv()
 
 from google import genai
 from google.genai import types
@@ -53,9 +49,9 @@ class VideoDescriptionPipeline:
         logger.info(f"Using Gemini model: {self.model_name}")
 
         # Check model availability in Gemini
-        available_models = [model.name for model in self.client.models.list()]
-        if self.model_name not in available_models:
-            raise ValueError(f"Model {self.model_name} is not available in Gemini. Please check the model name.")
+        # available_models = [model.name for model in self.client.models.list()]
+        # if self.model_name not in available_models:
+        #     raise ValueError(f"Model {self.model_name} is not available in Gemini. Please check the model name.")
         
         self.level1_interval = level1_interval
         self.level2_interval = level2_interval
@@ -438,6 +434,12 @@ class VideoDescriptionPipeline:
             "video_uri": video_uri,
             "duration": duration,
             "processing_timestamp": datetime.now().isoformat(),
+            "level1_interval": self.level1_interval,
+            "level2_interval": self.level2_interval,
+            "model_name": self.model_name,
+            "level1_descriptions_count": len(self.level1_descriptions),
+            "level2_descriptions_count": len(self.level2_descriptions),
+            "level3_description_exists": self.level3_description is not None,
             "level1_descriptions": [
                 {
                     "timestamp": desc.timestamp,

@@ -1,0 +1,217 @@
+[
+  {
+    "level": 1,
+    "qa_pairs": [
+      {
+        "Dimension": "Temporal",
+        "Question": "What sequence of events is shown from the beginning of the unrest to the police vehicle reversing?",
+        "Answer": "The video begins with police facing a crowd, objects are thrown, a petrol bomb lands and ignites, a siren blares during a standoff, and finally, a police armored vehicle drives forward briefly before reversing under projectile attack."
+      },
+      {
+        "Dimension": "Spatial",
+        "Question": "Where are the main groups (police and crowd) positioned relative to each other and the street?",
+        "Answer": "The police armored vehicles and officers are on the street, facing a large crowd of people gathered on a raised wall."
+      },
+      {
+        "Dimension": "Causal",
+        "Question": "What is the direct cause of the petrol bomb igniting on the street?",
+        "Answer": "The petrol bomb ignited on the street because it was thrown by members of the crowd."
+      },
+      {
+        "Dimension": "Plot",
+        "Question": "How does the narrative of the video develop from the initial confrontation to its abrupt end?",
+        "Answer": "The narrative starts with a confrontation between police and a crowd, escalates with thrown projectiles and a petrol bomb, transitions into a tense standoff marked by a blaring siren, then shows a police vehicle being targeted and reversing, concluding with an abrupt cut to a black screen."
+      },
+      {
+        "Dimension": "Description Object",
+        "Question": "What are the key characteristics of the projectiles thrown by the crowd?",
+        "Answer": "The projectiles include bottles, petrol bombs that ignite upon landing, fireworks, and rocks."
+      },
+      {
+        "Dimension": "Fine-grain Action",
+        "Question": "Describe the specific actions of the young men shown in the street-level view.",
+        "Answer": "The young men, some with their faces covered, are actively throwing objects like bottles and rocks."
+      },
+      {
+        "Dimension": "Camera Direction",
+        "Question": "How does the camera's perspective change to show different aspects of the scene?",
+        "Answer": "The camera shifts from an initial police-facing-crowd view to a street-level view of young men, then back to police vehicles, includes a slight zoom and slow pan, and finally cuts to a new angle looking down a street."
+      },
+      {
+        "Dimension": "Object Direction",
+        "Question": "What is the direction of movement for the police armored vehicle in the final active segment?",
+        "Answer": "The police armored vehicle first drives forward briefly, then reverses its direction as objects are thrown at it."
+      },
+      {
+        "Dimension": "Attribute Change",
+        "Question": "What changes are observed in the camera's stability and the screen's state throughout the video?",
+        "Answer": "The camera shakes slightly during intense moments, and the screen abruptly cuts to black and remains so for the final segment."
+      },
+      {
+        "Dimension": "Description Human",
+        "Question": "How are the police officers and the young men involved in the unrest characterized?",
+        "Answer": "Police officers are characterized as being in riot gear and deployed in armored vehicles, while the young men are depicted as actively throwing objects, with some having their faces covered."
+      }
+    ]
+  },
+  {
+    "level": 2,
+    "qa_pairs": [
+      {
+        "Dimension": "Temporal",
+        "Question": "What sequence of events occurred from the initial confrontation to the direct attack on the police vehicle?",
+        "Answer": "The video opens with police facing a crowd, followed by bottles, petrol bombs, and fireworks being thrown, then a petrol bomb igniting, a siren blaring, and finally a police armored vehicle driving forward briefly before reversing under attack."
+      },
+      {
+        "Dimension": "Spatial",
+        "Question": "Describe the spatial relationship between the crowd, the police, and the thrown objects during the unrest.",
+        "Answer": "A large crowd is gathered on a raised wall, facing police armored vehicles and officers in riot gear on the street, with objects like bottles, rocks, and petrol bombs being thrown from the crowd onto the street directly in front of the police vehicles."
+      },
+      {
+        "Dimension": "Causal",
+        "Question": "What factors directly contributed to the escalating violence and chaotic atmosphere depicted in the video?",
+        "Answer": "The escalating violence and chaotic atmosphere were caused by the crowd throwing bottles, petrol bombs, and fireworks at police, the deployment of riot police, the blaring of a loud, piercing siren, and the camera shakes emphasizing the intensity."
+      },
+      {
+        "Dimension": "Speed",
+        "Question": "How does the movement of the police armored vehicle change when it comes under attack?",
+        "Answer": "The police armored vehicle drives forward briefly before reversing under attack, with multiple objects being thrown at it with loud impact."
+      },
+      {
+        "Dimension": "Binary",
+        "Question": "Were any petrol bombs shown igniting on the street during the unrest?",
+        "Answer": "Yes, a petrol bomb landed and ignited on the street directly in front of the police vehicles."
+      },
+      {
+        "Dimension": "Count",
+        "Question": "Approximately how many people were gathered in the crowd during the unrest?",
+        "Answer": "Hundreds of people were gathered in the crowd during the unrest."
+      },
+      {
+        "Dimension": "Plot",
+        "Question": "What is the overall narrative progression of the unrest shown in the video?",
+        "Answer": "The video's narrative progresses from a tense standoff between police and a large crowd, through an escalation of violence with thrown projectiles and a petrol bomb ignition, to a direct attack on a police armored vehicle amidst a chaotic atmosphere, before abruptly cutting to black."
+      },
+      {
+        "Dimension": "Description Object",
+        "Question": "What are the key characteristics of the police vehicles shown in the video?",
+        "Answer": "The police vehicles are armored and lined up on the street, serving as a barrier, and are shown enduring direct impacts from thrown objects."
+      },
+      {
+        "Dimension": "Time Order",
+        "Question": "Detail the chronological sequence of auditory and visual cues that emphasize the intensity of the scene.",
+        "Answer": "The intensity is emphasized by the initial scene of police facing a crowd, followed by the sound of objects being thrown, then a petrol bomb igniting, a loud, piercing siren beginning to blare accompanied by camera shakes, and finally a loud impact sound as objects hit a police vehicle."
+      },
+      {
+        "Dimension": "Fine-grain Action",
+        "Question": "What specific actions are attributed to the young men within the crowd?",
+        "Answer": "Young men, some with covered faces, are actively throwing objects like bottles and rocks, and petrol bombs."
+      },
+      {
+        "Dimension": "Object Existence",
+        "Question": "What types of projectiles are confirmed to be present and used by the crowd against the police?",
+        "Answer": "Bottles, petrol bombs, fireworks, and rocks are confirmed to be present and thrown by the crowd."
+      },
+      {
+        "Dimension": "Description Human",
+        "Question": "How are the police officers depicted in terms of their gear and role during the confrontation?",
+        "Answer": "Police officers are depicted in riot gear, deployed as riot police, facing the large crowd from behind armored vehicles."
+      },
+      {
+        "Dimension": "Attribute Change",
+        "Question": "How does the overall atmosphere of the scene change throughout the video's duration?",
+        "Answer": "The atmosphere changes from a tense standoff to one of escalating violence and chaos, marked by increased activity, the blaring siren, and direct attacks on police vehicles."
+      },
+      {
+        "Dimension": "Camera Direction",
+        "Question": "Describe the different camera perspectives and movements used to capture the scene.",
+        "Answer": "The video uses an opening perspective showing police facing a crowd on a raised wall, shifts to street level, includes zooms and pans across the police formation, and features camera shakes."
+      },
+      {
+        "Dimension": "Object Direction",
+        "Question": "In what direction do the thrown objects primarily travel relative to the police vehicles?",
+        "Answer": "The thrown objects primarily travel towards the police vehicles, landing directly in front of them or impacting them."
+      }
+    ]
+  },
+  {
+    "level": 3,
+    "qa_pairs": [
+      {
+        "Dimension": "Temporal",
+        "Question": "What is the sequence of events depicted in the confrontation?",
+        "Answer": "The scene opens with police forming a defensive line, followed by young men throwing projectiles, a petrol bomb igniting, an armored vehicle moving forward, enduring a barrage, and then reversing, before the video cuts to black."
+      },
+      {
+        "Dimension": "Spatial",
+        "Question": "Where are the crowd and police positioned relative to each other?",
+        "Answer": "The police in full riot gear and armored vehicles form a defensive line against hundreds of people gathered on a raised wall and the street."
+      },
+      {
+        "Dimension": "Causal",
+        "Question": "What caused the police armored vehicle to reverse its movement?",
+        "Answer": "The police armored vehicle was forced to reverse due to a sustained barrage of thrown objects accompanied by loud impact sounds after it briefly moved forward."
+      },
+      {
+        "Dimension": "Speed",
+        "Question": "How does the movement of the police armored vehicle change during the confrontation?",
+        "Answer": "The police armored vehicle briefly moves forward before being forced to reverse under the sustained attack."
+      },
+      {
+        "Dimension": "Binary",
+        "Question": "Is there any indication that the confrontation resolves by the end of the video?",
+        "Answer": "No, the video abruptly cuts to black, leaving a strong sense of unresolved tension."
+      },
+      {
+        "Dimension": "Count",
+        "Question": "How many types of projectiles are explicitly mentioned as being thrown by the crowd?",
+        "Answer": "Three types of projectiles are explicitly mentioned: bottles, petrol bombs, and fireworks."
+      },
+      {
+        "Dimension": "Plot",
+        "Question": "What is the overall narrative arc of the video's depiction of the civil unrest?",
+        "Answer": "The video's narrative arc begins with the setup of a police defensive line against a crowd, escalates through the throwing of projectiles and a petrol bomb ignition, reaches a climax with an armored vehicle's advance and forced retreat under attack, and concludes abruptly, conveying unresolved tension and violent clashes."
+      },
+      {
+        "Dimension": "Description Object",
+        "Question": "Describe the characteristics of the siren heard throughout the footage.",
+        "Answer": "The siren is described as loud and piercing, blaring continuously throughout much of the footage, amplifying the chaotic and dangerous atmosphere."
+      },
+      {
+        "Dimension": "Time Order",
+        "Question": "What is the chronological progression of the police's actions in the confrontation?",
+        "Answer": "The police initially form a defensive line, then an armored vehicle briefly moves forward, and subsequently reverses under attack."
+      },
+      {
+        "Dimension": "Fine-grain Action",
+        "Question": "What specific actions do the young men in the crowd perform during the confrontation?",
+        "Answer": "Young men from the crowd are seen actively throwing various projectiles, including bottles, petrol bombs, and fireworks, at the police."
+      },
+      {
+        "Dimension": "Object Existence",
+        "Question": "Are any non-police vehicles present in the immediate confrontation zone?",
+        "Answer": "No, the description only mentions multiple police armored vehicles and officers; no other non-police vehicles are mentioned in the immediate confrontation zone."
+      },
+      {
+        "Dimension": "Description Human",
+        "Question": "How are the police officers and the crowd described in terms of their appearance and behavior?",
+        "Answer": "Police officers are in full riot gear forming a defensive line, while the crowd is described as large, agitated, with young men actively throwing projectiles."
+      },
+      {
+        "Dimension": "Attribute Change",
+        "Question": "How does the police armored vehicle's state change during the climax of the confrontation?",
+        "Answer": "The police armored vehicle initially moves forward, but its state changes as it is subjected to a barrage of thrown objects, forcing it to reverse."
+      },
+      {
+        "Dimension": "Camera Direction",
+        "Question": "How does the camera movement reflect the volatility of the situation?",
+        "Answer": "The camera frequently shakes and zooms, mirroring the volatile situation on the ground."
+      },
+      {
+        "Dimension": "Object Direction",
+        "Question": "In which direction does the police armored vehicle move during the climax of the confrontation?",
+        "Answer": "The police armored vehicle briefly moves forward before reversing its direction."
+      }
+    ]
+  }
+]

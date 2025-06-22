@@ -20,7 +20,7 @@ def main():
     )
     
     # Process YouTube video directly
-    youtube_url = "https://www.youtube.com/shorts/dIsxL4iI_1A"
+    youtube_url = "https://www.youtube.com/shorts/-LcVzSYBDD8"
     
     try:
         results = pipeline.process_video(youtube_url)
